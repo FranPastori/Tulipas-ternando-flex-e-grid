@@ -1,1 +1,94 @@
+:root{
+    --cordefundo: #000000;
+    --cordatipografia: #FFFFFF;
+    --banner: url(img/image-apresentacao.svg);
+}
+*{
+    margin:0vw ;
+    padding:0vw ;
+}
+body{
+    background-color: var(--cordefundo);
+    font-family: 'inter', serif;
+    color: var(--cordatipografia)
+}
+h1 {
+    font-family: 'Carattere', cursive;
+    color: var(--cordatipografia);
+    font-size: 3em;
+}
 
+.apresentacao {
+    background-image: var(--banner);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+   align-items: center;
+}
+.apresentacao__titulo{
+    font-size: 8em;
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.container {
+padding: 1vw;
+gap: 0.4vw;
+width: 100vw;
+align-items: center;
+height: 100vh;
+display: grid;
+
+grid-template-areas:'titulo imagem'
+                    'texto imagem';
+}
+.container__titulo{
+    grid-area: titulo;
+    width: 40vw;
+    align-self: end;
+    
+}
+.container__texto{
+    grid-area: texto;
+    width: 40vw;
+    margin: 1vw;
+    padding: 1vw;
+    text-align: justify;
+}
+.container__imagem{
+    grid-area: imagem;
+    width: 40vw;
+    height: auto;
+    margin: 1vw;
+    padding: 1vw;
+
+}
+
+.paisagens{
+    padding: 1vw;
+    margin: 1vw;
+    height: 100vh;
+}
+.paisagens__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style:none;
+}
+
+.paisagens__lista{
+    padding: 1vw;
+    margin: 1vw;
+}
+
+.referencias{
+    height:40vh ;
+}
+
+.referencias__link{
+    display: block;
+    font-size: 0.8em;
+    color: blanchedalmond;
+}
